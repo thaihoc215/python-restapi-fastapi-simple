@@ -1,0 +1,9 @@
+curl -X POST "http://127.0.0.1:8000/items?item=Sample%20Item"
+
+curl -X GET "http://127.0.0.1:8000/items/0"
+
+curl "http://localhost:8000/items?skip=0&limit=5"
+
+curl -X POST "http://localhost:8000/items" -H "Content-Type: application/json" -d '{"text": "Sample item", "is_done": false}'
+
+curl -X POST "http://localhost:8000/items" -H "Content-Type: application/json" -d '{"title": "Sample item"}' -> for check validation required
